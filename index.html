@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wissal Naouaii · WISS-OS</title>
+<meta name="description" content="Wissal Naouaii, software engineer working on robotics, embedded systems and computer vision. RoboCup Junior and Eurobot competitor, robotics instructor in Tunis.">
+<meta property="og:title" content="Wissal Naouaii · WISS-OS">
+<meta property="og:description" content="Robotics, embedded systems and computer vision. Projects, awards and experience.">
+<meta property="og:image" content="assets/img/wissal.jpg">
+<meta name="theme-color" content="#09090C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2309090C'/%3E%3Crect x='4' y='6' width='16' height='11' rx='3' fill='%233351E6'/%3E%3Ccircle cx='9' cy='11.5' r='1.6' fill='%23F5F3EE'/%3E%3Ccircle cx='15' cy='11.5' r='1.6' fill='%23F5F3EE'/%3E%3Crect x='11' y='2.5' width='2' height='3.5' fill='%233351E6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="booting">
+<!--
+  HOW TO EDIT
+  ─────────────────────────────────────────────
+  Every section below is plain HTML. Search for "TODO" to find the spots still waiting for your details.
+  Images live in assets/img/. To swap one, drop your file there and change the src="" path.
+  See README.md for adding a project / certificate and for publishing the site.
+-->
+
+<div class="bg" aria-hidden="true"></div>
+<div class="crt" aria-hidden="true"></div>
+
+<!-- ================= BOOT SCREEN ================= -->
+<div class="boot" id="boot" role="dialog" aria-label="Loading WISS-OS">
+  <div class="tube">
+    <div class="screen">
+      <pre class="blog" id="blog"></pre>
+      <canvas class="lidar" id="lidar" aria-hidden="true"></canvas>
+      <div class="bfoot"><div class="prog" id="prog" aria-hidden="true"></div><span id="pct">0%</span><button class="skip" id="skip" type="button">Skip ▸▸</button></div>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ================= 01 ABOUT ================= -->
+<section class="sec" id="about" data-i="1">
+  <div class="win">
+    <div class="tb"><span class="tt">C:\WISS\ABOUT.TXT</span><span class="ctl"><i></i><i></i><i></i></span></div>
+    <div class="wb about">
+      <div>
+        <div class="portrait" id="portrait">
+          <img src="assets/img/wissal.jpg" alt="Portrait of Wissal Naouaii" id="portraitImg">
+          <canvas id="portraitDither" aria-hidden="true"></canvas>
+        </div>
+      </div>
+      <div>
+        <p class="term">&gt; whoami</p>
+        <h1 class="hello">Wissal Naouaii</h1>
+        <div class="role">Software engineer · Robotics · Embedded · Vision</div>
+        <p class="intro rd">Software engineering student at Université Centrale with hands-on experience in robotics, embedded C, computer vision and real-time systems. 3rd place at Eurobot 2022, qualified twice for RoboCup Junior International, and a robotics instructor who has taught 100+ young makers.</p>
+        <dl class="facts">
+          <dt>Based in</dt><dd>Tunis, Tunisia</dd>
+          <dt>Focus</dt><dd>Robotics, embedded systems, computer vision</dd>
+          <dt>Languages</dt><dd>Arabic (native) · English (C2) · French (B2)</dd>
+        </dl>
+        <div class="row-btns"><a class="btn pri" href="#contact">Contact me</a><a class="btn" href="assets/cv_WissalNaouaii.pdf" download>Download CV</a></div>
+        <div class="hint"><span class="cur">▼</span> scroll to continue</div>
+      </div>
+    </div>
+    <div class="st"><span>ABOUT.TXT · 1 KB</span><span>v1.0</span></div>
+  </div>
+</section>
+
+<!-- ================= 02 EDUCATION ================= -->
+<section class="sec" id="education" data-i="2">
+  <div class="sec-h"><span class="num">02</span><h2>Education</h2><span class="n">2 entries</span><span class="v">v2.0</span></div>
+  <div class="tl">
+
+    <div class="tl-item">
+      <div class="tl-when">2022 – 2023<span>High school</span></div>
+      <div class="win"><div class="tb"><span class="tt">EDU_01 — High school</span><span class="ctl"><i></i><i></i><i></i></span></div>
+        <div class="wb"><div class="edu">
+          <div><h3>El Farabi High School</h3><p class="deg rd">Baccalaureate · Computer Science</p>
+            <div class="meta" style="margin-bottom:10px"><span>Mornaguia, Tunisia</span><span>Graduated Jun 2023</span></div>
+            <ul class="pts rd"><li >Graduated with 3.7 GPA</li></ul></div>
+          <div class="media logo r43"><img src="assets/img/logo-elfarabi.jpeg" alt="El Farabi High School logo" loading="lazy"></div>
+        </div></div>
+        <div class="st"><span>EDU_01</span><span>v2.0</span></div></div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-when">2024 – 2027<span>University</span></div>
+      <div class="win"><div class="tb"><span class="tt">EDU_02 — University</span><span class="ctl"><i></i><i></i><i></i></span></div>
+        <div class="wb"><div class="edu">
+          <div><h3>Université Centrale</h3><p class="deg rd">BSc in Software Engineering &amp; Information Systems</p>
+            <div class="meta" style="margin-bottom:10px"><span>Tunis, Tunisia</span><span>Sep 2024 – Jun 2027 (expected)</span></div>
+            <ul class="pts rd"><li class="">3rd year student</li></ul></div>
+          <div class="media logo r43"><img src="assets/img/logo-UC.png" alt="Université Centrale logo" loading="lazy"></div>
+        </div></div>
+        <div class="st"><span>EDU_02</span><span>v2.0</span></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 03 PROJECTS ================= -->
+<section class="sec" id="projects" data-i="3">
+  <div class="sec-h"><span class="num">03</span><h2>Projects</h2><span class="n">4 programs</span><span class="v">v3.0</span></div>
+  <div class="projs">
+
+    <!-- PROJECT 1 -->
+    <div class="win"><div class="tb"><span class="tt">PROJ_01.EXE — SmartFleet</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb"><div class="proj">
+        <div class="shots"><div class="media r169"><img src="assets/img/smartfleet.jpg" alt="SmartFleet road network simulation" loading="lazy"></div></div>
+        <div class="pbody">
+          <div><h3>SmartFleet</h3><p class="tag rd">A multi-agent reinforcement learning system for urban delivery fleet coordination, built for the IEEE RAS x VTS SmartFleet Challenge.</p>
+            <div class="meta"><span >Role: Main Software Team member</span><span>2025</span></div></div>
+          <div><p class="lbl">Problem</p><p class="rd">The Urban Logistics Challenge - The Need for Decentralized Autonomous Solutions</p></div>
+          <div><p class="lbl">What we built</p><ul class="pts rd"><li >Multi-agent reinforcement learning system for urban delivery fleet coordination using MAPPO, Ray RLlib, and SUMO traffic simulation.</li></ul></div>
+          <div class="chips"><span class="chip">MAPPO</span><span class="chip">Ray RLlib</span><span class="chip">SUMO</span><span class="chip">Python</span></div>
+          <div class="row-btns"><a class="btn pri" href="https://github.com/WissalNaouaii/SmartFleet_MAPPO" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div></div>
+      <div class="st"><span>PROJ_01 · 1 of 4</span><span>v3.0</span></div></div>
+
+    <!-- PROJECT 2 -->
+    <div class="win"><div class="tb"><span class="tt">PROJ_02.EXE — Maze-solving robot</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb"><div class="proj">
+        <div class="shots"><div class="media r169"><img src="assets/img/maze-robot.jpg" alt="CAD model of the maze-solving robot" loading="lazy"></div></div>
+        <div class="pbody">
+          <div><h3>Maze-solving rescue robot</h3><p class="tag rd">An autonomous robot that explores and solves complex mazes on its own.</p>
+            <div class="meta"><span>Role: software team</span><span>RoboCup Junior 2024</span><span>Feb – Jun 2024</span></div></div>
+          <div><p class="lbl">Problem</p><p class="rd">Navigate an unknown maze with no human input, perceiving walls and obstacles in real time.</p></div>
+          <div><p class="lbl">What I built</p><ul class="pts rd"><li>Depth-First Search exploration and pathfinding</li><li>Sensor integration to map the environment accurately</li><li>Real-time decision-making for efficient traversal</li></ul></div>
+          <div class="metric"><b>1st | 1st</b><span class="rd">Egypt qualification · Hannover, Germany</span></div>
+          <div class="chips"><span class="chip">C / C++</span><span class="chip">DFS</span><span class="chip">Sensors</span><span class="chip">Embedded</span></div>
+          <div class="row-btns"><a class="btn pri" href="https://github.com/WissalNaouaii/Maze_Solver_RoboCup_2024" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div></div>
+      <div class="st"><span>PROJ_02 · 2 of 4</span><span>v3.0</span></div></div>
+
+    <!-- PROJECT 3 -->
+    <div class="win"><div class="tb"><span class="tt">PROJ_03.EXE — Vision line follower</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb"><div class="proj">
+        <div class="shots"><div class="media r169"><img src="assets/img/line-follower.jpg" alt="Camera-equipped line-following robot" loading="lazy"></div></div>
+        <div class="pbody">
+          <div><h3>Vision line-following robot</h3><p class="tag rd">A camera-equipped robot that detects and tracks lines with computer vision.</p>
+            <div class="meta"><span>Role: software team</span><span>RoboCup Junior 2023</span><span>Feb – Dec 2023</span></div></div>
+          <div><p class="lbl">Problem</p><p class="rd">Follow a line reliably at speed across changing tracks, lighting and obstacles.</p></div>
+          <div><p class="lbl">What I built</p><ul class="pts rd"><li>Computer-vision pipeline for line detection and tracking</li><li>Multi-sensor integration</li><li>Optimised control system for precise, reliable navigation</li></ul></div>
+          <div class="metric"><b>1st | 4th</b><span class="rd">Egypt qualification · PyeongChang, South Korea</span></div>
+          <div class="chips"><span class="chip">Computer vision</span><span class="chip">Camera</span><span class="chip">Control systems</span></div>
+          <div class="row-btns"><a class="btn pri" href="https://github.com/WissalNaouaii/Line_Follower_RoboCup_2023" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div></div>
+      <div class="st"><span>PROJ_03 · 3 of 4</span><span>v3.0</span></div></div>
+
+    <!-- PROJECT 4 -->
+    <div class="win"><div class="tb"><span class="tt">PROJ_04.EXE — Dino, Eurobot robot</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb"><div class="proj">
+        <div class="shots"><div class="media r169"><img src="assets/img/front.jpg" alt="Dino, the Eurobot Junior 2022 robot" loading="lazy"></div></div>
+        <div class="pbody">
+          <div><h3>Dino · Eurobot Junior 2022</h3><p class="tag rd">A semi-autonomous competition robot driven with a PS3 controller and PID-based navigation.</p>
+            <div class="meta"><span>Role: software team</span><span>Eurobot Junior 2022</span><span>Apr – Jun 2022</span></div></div>
+          <div><p class="lbl">Problem</p><p class="rd">Theme “Age of Bots”: robots act as archaeologists. Uncover excavation squares, collect and store samples, display them in the museum, then return to camp before the match ends.</p></div>
+          <div><p class="lbl">What I built</p><ul class="pts rd"><li>PID control for precise motor control and real-time path correction</li><li>PS3 controller integration for driving the robot</li></ul></div>
+          <div class="metric"><b>1st | 3rd</b><span class="rd">Tunisia qualification · international finals, France</span></div>
+          <div class="chips"><span class="chip">PID control</span><span class="chip">PS3 controller</span><span class="chip">Embedded C</span></div>
+          <div class="row-btns"><a class="btn pri" href="https://github.com/WissalNaouaii/Dino_Eurobot_Junior_2022" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div></div>
+      <div class="st"><span>PROJ_04 · 4 of 4</span><span>v3.0</span></div></div>
+
+  </div>
+</section>
+
+<!-- ================= 04 ACHIEVEMENTS ================= -->
+<section class="sec" id="achievements" data-i="4">
+  <div class="sec-h"><span class="num">04</span><h2>Achievements</h2><span class="n">6 awards</span><span class="v">v4.0</span></div>
+  <div class="ach">
+
+    <div class="win"><div class="tb"><span class="tt">COMPETITION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/hackathon-2025.jpg" alt="FST Hackathon 4.0 winners" loading="lazy"></div>
+      <span class="badge">1st place</span><h3>FST Hackathon 4.0</h3><div class="meta"><span>Tunis, Tunisia</span><span>Jul 2025</span></div>
+      <p class="rd" style="font-size:14px">Won with AquaTune, an AI optimizer that cuts energy use and manages brine discharge in desalination plants, built in 24 hours at the Faculty of Sciences of Tunis.</p></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">COMPETITION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/robocup-2024.jpg" alt="Wissal working on the maze robot at RoboCup Junior 2024" loading="lazy"></div>
+      <span class="badge">1st National | 1st international</span><h3>RoboCup Junior 2024</h3><div class="meta"><span>Abu Qir, Egypt · Hannover, Germany</span><span>2024</span></div>
+      <p class="rd" style="font-size:14px">World championship in autonomous robotics. Maze-solving robot competing against teams from 50+ countries.</p></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">COLLABORATION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/group-event.jpg" alt="Group photo at the Journées de la Robotique" loading="lazy"></div>
+      <h3>Journées de la Robotique</h3><div class="meta"><span>Manouba, Tunisia</span><span>2024</span></div>
+      <p class="rd" style="font-size:14px">International robotics event fostering collaboration with Russian partners and showcasing Tunisian robotics talent.</p></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">RECOGNITION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/ceremony.jpg" alt="Honor ceremony with the Ministry of Youth and Sports" loading="lazy"></div>
+      <h3>Ministry of Youth & Sports Honor</h3><div class="meta"><span>Manouba, Tunisia</span><span>2024</span></div>
+      <p class="rd" style="font-size:14px">Honored for mentoring 168 youth in the National Robotics & AI Summer Camp, teaching embedded systems and programming.</p></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">COMPETITION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/robocup-2023.jpg" alt="Team at RoboCup Junior 2023" loading="lazy"></div>
+      <span class="badge">1st National | 4th intl</span><h3>RoboCup Junior 2023</h3><div class="meta"><span>Abu Qir, Egypt · PyeongChang, South Korea</span><span>2023</span></div>
+      <p class="rd" style="font-size:14px">Competing against 45 countries in autonomous robotics with maze-solving and rescue line challenges.</p></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">COMPETITION</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="media r43"><img src="assets/img/eurobot-2022.png" alt="Eurobot 2022 robot and CAD model" loading="lazy"></div>
+      <span class="badge">1st National | 3rd intl</span><h3>Eurobot Junior 2022</h3><div class="meta"><span>Tunis, Tunisia · Planète Sciences, France</span><span>2022</span></div>
+      <p class="rd" style="font-size:14px">European robotics championship featuring strategy-based autonomous robot competition with precise navigation.</p></div></div>
+  </div>
+</section>
+
+<!-- ================= 05 CERTIFICATIONS (carousel) ================= -->
+<section class="sec" id="certifications" data-i="5">
+  <div class="sec-h"><span class="num">05</span><h2>Certifications</h2><span class="n">2 certificates</span><span class="v">v5.0</span></div>
+  <div class="win viewer"><div class="tb"><span class="tt">Certificate Viewer</span><span class="ctl"><i></i><i></i><i></i></span></div>
+    <div class="wb">
+      <div class="track" id="track" tabindex="0" aria-label="Certificates, use arrow keys or swipe">
+        <!-- To use a real scan: replace <div class="page">…</div> with
+             <div class="page img"><img src="assets/img/your-cert.jpg" alt="…"></div> -->
+        <div class="slide" aria-label="Certificate 1 of 2">
+          <div class="page img"><img src="assets/img/cert-lewagon-webdev.jpg" alt="Le Wagon certificate: Introduction to Web Development for Honoris, Wissal Naouaii" loading="lazy"></div>
+          <div style="display:grid;gap:12px"><div><h3>Introduction to Web Development</h3><p class="rd" style="color:var(--accent-hi)">Le Wagon · for Honoris United Universities</p></div>
+            <dl class="cmeta"><dt>Issued</dt><dd>April 30, 2026</dd><dt>Skills</dt><dd>HTML, CSS, web fundamentals</dd></dl>
+            <p class="rd" style="font-size:14px">Coding bootcamp introduction to building websites, delivered by Le Wagon for Honoris students.</p>
+            <div class="row-btns"><a class="btn pri" href="assets/certs/cert-lewagon-webdev.pdf" target="_blank" rel="noopener">View certificate ↗</a></div></div></div>
+        <div class="slide" aria-label="Certificate 2 of 2">
+          <div class="page img"><img src="assets/img/cert-gymglish-english.jpg" alt="Gymglish end-of-training report, English level C1–C2, Wissal Naouaii" loading="lazy"></div>
+          <div style="display:grid;gap:12px"><div><h3>English, level 5.0 (~C1–C2)</h3><p class="rd" style="color:var(--accent-hi)">Gymglish Learning Series · Aimigo</p></div>
+            <dl class="cmeta"><dt>Period</dt><dd>Dec 2024 – Jun 2026 (18-month program)</dd><dt>Issued</dt><dd>June 3, 2026 · Paris</dd><dt>Level</dt><dd>5.0, Expert / mastery (~C2)</dd></dl>
+            <p class="rd" style="font-size:14px">End-of-training report for an 18-month English course, assessed at the highest level of the scale.</p>
+            <div class="row-btns"><a class="btn pri" href="assets/certs/cert-gymglish-english.pdf" target="_blank" rel="noopener">View certificate ↗</a></div></div></div>
+      </div>
+      <div class="cbar"><div class="dots" id="dots"></div><span class="cnt" id="cnt">1 / 2</span>
+        <button class="btn" type="button" id="cprev" aria-label="Previous certificate">◀</button><button class="btn" type="button" id="cnext" aria-label="Next certificate">▶</button></div>
+    </div>
+    <div class="st"><span id="certSt">CERT_01.DOC</span><span>v5.0</span></div></div>
+</section>
+
+<!-- ================= 06 EXPERIENCE ================= -->
+<section class="sec" id="experience" data-i="6">
+  <div class="sec-h"><span class="num">06</span><h2>Experience</h2><span class="n">3 roles</span><span class="v">v6.0</span></div>
+  <div class="exps">
+
+    <div class="win"><div class="tb"><span class="tt">Inbox — message 1 of 3</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="ehead"><dl class="hdr"><dt>From</dt><dd><b>Discovery Club Junior</b></dd><dt>Subject</dt><dd class="subj">Robotics Instructor</dd><dt>Date</dt><dd>Jun 2023 – present · Manouba, Tunisia</dd></dl><div class="elogo"><img src="assets/img/logo-discovery.png" alt="Discovery Club Junior logo" loading="lazy"></div></div>
+      <div class="exp-body"><div style="display:grid;gap:12px"><ul class="pts rd">
+        <li>Teach students aged 12–18 robotics fundamentals: programming, sensor integration and circuit design</li>
+        <li>Lead Arduino and Raspberry Pi workshops where students build and code autonomous robots</li>
+        <li>Prepare students for local and international robotics competitions</li>
+        <li>Led the “Basic for Arduino” workshop at the National Forum on Robotics and AI (Ministry of Youth and Sports), guiding 100+ participants through C++ and electronic wiring</li></ul>
+        <div class="chips"><span class="chip">Arduino</span><span class="chip">Raspberry Pi</span><span class="chip">C++</span><span class="chip">Teaching</span></div></div></div></div>
+      <div class="st"><span>● current</span><span>v6.0</span></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">Inbox — message 2 of 3</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="ehead"><dl class="hdr"><dt>From</dt><dd><b>IEEE FST RAS Chapter</b></dd><dt>Subject</dt><dd class="subj">Club Member</dd><dt>Date</dt><dd>2025 – 2026 · Faculty of Sciences of Tunis</dd></dl><div class="elogo"><img src="assets/img/logo-ieee-ras.png" alt="IEEE RAS chapter logo" loading="lazy"></div></div>
+      <div class="exp-body"><div style="display:grid;gap:12px"><ul class="pts rd">
+        <li>Took part in TSYP 13 (Tunisian Students and Young Professionals Congress): sessions on innovation, AI and tech leadership</li></ul>
+        <div class="chips"><span class="chip">IEEE</span><span class="chip">Robotics &amp; Automation</span></div></div></div></div>
+      <div class="st"><span>read</span><span>v6.0</span></div></div>
+
+    <div class="win"><div class="tb"><span class="tt">Inbox — message 3 of 3</span><span class="ctl"><i></i><i></i><i></i></span></div><div class="wb">
+      <div class="ehead"><dl class="hdr"><dt>From</dt><dd><b>Discovery Club Junior</b></dd><dt>Subject</dt><dd class="subj">Club Member · Competitor</dd><dt>Date</dt><dd>2017 – 2023 · Manouba, Tunisia</dd></dl><div class="elogo"><img src="assets/img/logo-discovery.png" alt="Discovery Club Junior logo" loading="lazy"></div></div>
+      <div class="exp-body"><div style="display:grid;gap:12px"><ul class="pts rd">
+        <li>Competed in national and international robotics competitions</li>
+        <li>Designed, tuned and implemented PID control and a PS3/PS4 controller for precise motor control and real-time path correction</li>
+        <li>Built foundational projects in embedded C and electronics</li></ul>
+        <div class="chips"><span class="chip">Embedded C</span><span class="chip">PID</span><span class="chip">Electronics</span></div></div></div></div>
+      <div class="st"><span>read</span><span>v6.0</span></div></div>
+
+  </div>
+</section>
+
+<!-- ================= 07 SKILLS ================= -->
+<section class="sec" id="skills" data-i="7">
+  <div class="sec-h"><span class="num">07</span><h2>Skills</h2><span class="n">4 groups</span><span class="v">v7.0</span></div>
+  <div class="win"><div class="tb"><span class="tt">Skills Monitor — all processes</span><span class="ctl"><i></i><i></i><i></i></span></div>
+    <div class="wb"><div class="groups">
+      <div class="grp"><div class="grp-h"><h3>Embedded &amp; IoT</h3><span class="run">running</span></div>
+        <div class="chips"><span class="chip">Arduino</span><span class="chip">ESP32</span><span class="chip">Raspberry Pi</span><span class="chip">ROS</span><span class="chip">Embedded C</span></div></div>
+      <div class="grp"><div class="grp-h"><h3>AI &amp; Computer Vision</h3><span class="run">running</span></div>
+        <div class="chips"><span class="chip">OpenCV</span><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span></div></div>
+      <div class="grp"><div class="grp-h"><h3>Programming</h3><span class="run">running</span></div>
+        <div class="chips"><span class="chip">C / C++</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">PHP</span></div></div>
+      <div class="grp"><div class="grp-h"><h3>Web, Data &amp; Tools</h3><span class="run">running</span></div>
+        <div class="chips"><span class="chip">HTML / CSS</span><span class="chip">SQL Oracle</span><span class="chip">PL/SQL</span><span class="chip">NoSQL</span><span class="chip">Odoo</span><span class="chip">AWS</span></div></div>
+    </div></div>
+    <div class="st"><span>4 groups running</span><span>CPU: curiosity 100%</span></div></div>
+</section>
+
+<!-- ================= 08 CONTACT ================= -->
+<section class="sec" id="contact" data-i="8">
+  <div class="sec-h"><span class="num">08</span><h2>Contact</h2><span class="v">v8.0</span></div>
+  <div class="contact">
+    <div class="win"><div class="tb"><span class="tt">Messenger — Wissal</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb">
+        <div class="bub"><div class="b in">Hi! Thanks for scrolling all the way down. Want to build something together?</div></div>
+        <!-- Contact form: get a free access key at web3forms.com and paste it in value="" below.
+             Until then, the form opens the visitor's email app instead. -->
+        <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="dbf1d3be-a222-4b64-bded-c58695b5fa57">
+          <input type="hidden" name="subject" value="New message from your portfolio">
+          <label for="fn">Your name<input id="fn" name="name" autocomplete="name" required placeholder="Jane Recruiter"></label>
+          <label for="fe">Your email<input id="fe" name="email" type="email" autocomplete="email" required placeholder="jane@company.com"></label>
+          <label for="fm">Message<textarea id="fm" name="message" required placeholder="Hi Wissal, …"></textarea></label>
+          <div class="row-btns"><button class="btn pri" type="submit">Send message</button><span class="sent" id="sent" hidden></span></div>
+        </form>
+      </div>
+      <div class="st"><span>● online</span><span>Tunis · GMT+1</span></div></div>
+    <div class="win"><div class="tb"><span class="tt">Direct lines</span><span class="ctl"><i></i><i></i><i></i></span></div>
+      <div class="wb direct">
+        <div class="dl"><span>Email</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=wissalnaouaii@gmail.com" target="_blank" rel="noopener" title="Write to me in Gmail">wissalnaouaii@gmail.com</a><button class="copy" type="button" data-c="wissalnaouaii@gmail.com">Copy</button></div>
+        <div class="dl"><span>GitHub</span><a href="https://github.com/WissalNaouaii" target="_blank" rel="noopener">github.com/WissalNaouaii</a><button class="copy" type="button" data-c="https://github.com/WissalNaouaii">Copy</button></div>
+        <div class="dl"><span>Location</span><span>Tunis, Tunisia</span><span></span></div>
+        <div class="row-btns" style="margin-top:6px"><a class="btn pri" href="assets/cv_WissalNaouaii.pdf" download>Download CV (PDF)</a></div>
+      </div></div>
+  </div>
+  <div class="bye"><p>It is now safe to turn off your computer.</p><button class="btn" type="button" id="reboot2">↻ Reboot WISS-OS</button></div>
+</section>
+
+</main>
+
+<nav class="task" aria-label="Sections">
+  <button class="start" id="reboot" type="button" title="Replay boot">◆ WISS-OS</button>
+  <div class="tasks" id="tasks"></div>
+  <span class="ver" id="ver">v1.0</span>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>

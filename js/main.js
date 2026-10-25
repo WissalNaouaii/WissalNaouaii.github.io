@@ -1,13 +1,7 @@
-/* WISS-OS portfolio — behaviour
-   1. Boot screen   2. Scroll-driven OS "dials"   3. Portrait dither reveal
-   4. Certificate carousel   5. Contact form + copy buttons                */
 (() => {
 const $ = s => document.querySelector(s);
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const root = document.documentElement;
-
-// Show TODO outlines only while you're editing locally
-if (location.protocol === 'file:' || ['localhost','127.0.0.1'].includes(location.hostname) || location.search.includes('edit')) document.body.classList.add('show-todo');
 
 /* ---------- 2. dials driven by scroll ---------- */
 const BDA='var(--accent-dim)', BDM='color-mix(in srgb,var(--paper) 18%,transparent)', BDL='color-mix(in srgb,var(--paper) 11%,transparent)', M='var(--mono)', SA='var(--sans)';
@@ -32,7 +26,6 @@ function dials(){
     const top=secs[k].offsetTop, nxt=k+1<secs.length?secs[k+1].offsetTop:Infinity;
     if(mid>=top||k===0){ i=k+1; f = nxt===Infinity ? 0 : Math.max(0,Math.min(1,((mid-top)/(nxt-top)-.6)/.4)); }
   }
-  // near the very bottom, always show the last state
   if(scrollY+innerHeight>=document.documentElement.scrollHeight-4){i=8;f=0;}
   if(i>=8){i=8;f=0;}
   const A=S[i], B=S[Math.min(8,i+1)];
@@ -51,7 +44,6 @@ const pImg=$('#portraitImg'), pCv=$('#portraitDither'), portrait=$('#portrait');
 function ditherPortrait(){
   const w=72, h=96; pCv.width=w; pCv.height=h;
   const c=pCv.getContext('2d');
-  // cover-crop the photo into the small canvas
   const ir=pImg.naturalWidth/pImg.naturalHeight, cr=w/h;
   let sw=pImg.naturalWidth, sh=pImg.naturalHeight, sx=0, sy=0;
   if(ir>cr){ sw=sh*cr; sx=(pImg.naturalWidth-sw)/2; } else { sh=sw/cr; sy=(pImg.naturalHeight-sh)/2; }
@@ -98,7 +90,7 @@ form.addEventListener('submit',async e=>{
   e.preventDefault();
   const key=form.querySelector('[name=access_key]').value.trim();
   const name=$('#fn').value, email=$('#fe').value, msg=$('#fm').value;
-  if(!key){ // no form service yet: open the visitor's email app
+  if(!key){ 
     window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=wissalnaouaii@gmail.com&su=${encodeURIComponent('Portfolio message from '+name)}&body=${encodeURIComponent(msg+'\n\n— '+name+' ('+email+')')}`,'_blank','noopener');
     sent.hidden=false; sent.textContent='Opening Gmail… or email wissalnaouaii@gmail.com directly.'; return;
   }
@@ -196,7 +188,6 @@ $('#skip').addEventListener('click',e=>{ e.stopPropagation(); finish(); });
 $('#reboot').addEventListener('click',startBoot);
 $('#reboot2').addEventListener('click',startBoot);
 
-// Full boot on the first visit of a session; quick reveal after that.
 let seen=false; try{ seen=sessionStorage.getItem('wissos-booted')==='1'; }catch(_){}
 if(seen || location.hash){ finish(); boot.hidden=true; }
 else (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(startBoot);

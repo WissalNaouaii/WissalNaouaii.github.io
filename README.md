@@ -8,7 +8,7 @@ site/
 ├── css/style.css     ← design (colors, layout, the OS "dials")
 ├── js/main.js        ← boot screen, scroll effects, certificate carousel, contact form
 └── assets/
-    ├── cv_WissalNaouaii.pdf
+    ├── cv_WissalNaouaii_EN.pdf  (+ _FR.pdf)
     └── img/          ← all photos and logos
 ```
 
